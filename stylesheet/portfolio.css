@@ -8,7 +8,19 @@
 
 /* Body */
 body {
-    margin: 0%  /* This ensures our site displays all the way to the edge of the browser screen */
+    margin: 0%;  /* This ensures our site displays all the way to the edge of the browser screen */
+    animation: fadeInAnimation 3s ease;
+    animation-iteration-count: 1; /*The animation will only run once, so it won't loop infinitely.*/
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 /* Heading 1 elements */
@@ -19,7 +31,7 @@ h1 {
     text-align: center; /* Centering all h1 elements */
     margin-top: 3%; /* Adds a small margin above h1 elements */
     color: #282626; 
-    font-size: clamp(20px, 8vw, 50px); /*Dynamic font size vith VW*/
+    font-size: clamp(18px, 6vw, 30px); /*Dynamic font size vith VW*/
 }
 
 /* Heading 1 element hover effect */
@@ -39,10 +51,9 @@ p {
     font-family: 'Roboto', sans-serif; /* Font from fonts.google.com */
     text-align: justify; /* Justify text within paragraph elements */
     letter-spacing: 1px; /* This expands the text slightly */
-    font-size: 17px;
     padding-left: 20px; /* Adds padding to the left of the paragraph element */
     padding-right: 20px; /* Adds padding to the right of the paragraph element */
-    font-size: clamp(16px, 5vw, 30px); /*Paragraph scaled with VW*/
+    font-size: clamp(17px, 4vw, 17px);
 }
 
 /* Paragraph element hover effect */
@@ -237,6 +248,7 @@ footer {
     padding-top: 3.5%;
     height: 450px;
 }
+
 
 /* This inserts something after the content of selected elements (in this case the elements with class "Row") */
 .Row:after {
