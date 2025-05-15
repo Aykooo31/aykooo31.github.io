@@ -19,6 +19,7 @@ h1 {
     text-align: center; /* Centering all h1 elements */
     margin-top: 3%; /* Adds a small margin above h1 elements */
     color: #282626; 
+    font-size: clamp(20px, 8vw, 50px); /*Dynamic font size vith VW*/
 }
 
 /* Heading 1 element hover effect */
@@ -41,6 +42,7 @@ p {
     font-size: 17px;
     padding-left: 20px; /* Adds padding to the left of the paragraph element */
     padding-right: 20px; /* Adds padding to the right of the paragraph element */
+    font-size: clamp(16px, 5vw, 30px); /*Paragraph scaled with VW*/
 }
 
 /* Paragraph element hover effect */
