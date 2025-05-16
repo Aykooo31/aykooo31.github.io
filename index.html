@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width" />
         <title>Ayhan Kosar</title>
         <link rel="stylesheet" type="text/css" href="stylesheet/portfolio.css">
+        <script src="javascript/portfolio.js"></script>
     </head>
 
     <!--Body-->
@@ -95,11 +96,11 @@
             <div class="Column_1 Column_tall">
                 <h1>Contact</h1>
                 <!--This specifies where and how to send the form data; we are leaving it blank-->
-                <form action="" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+                <form id="contactForm" action="" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
                     <label>Name:</label>
-                        <input type="text" placeholder="Please enter your name here">
+                        <input type="text" id="Name" placeholder="Please enter your name here">
                     <label>Phone Number:</label>
-                        <input type="text" id="Phone" pattern="[0-9]{10}" placeholder="Please enter your phone number">
+                        <input type="text" id="Phone" placeholder="Please enter your phone number">
                     <label>Email:</label>
                         <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
                     <label>Message:</label>
