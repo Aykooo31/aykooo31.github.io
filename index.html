@@ -98,6 +98,8 @@
                 <form action="" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
                     <label>Name:</label>
                         <input type="text" placeholder="Please enter your name here">
+                    <label>Phone Number:</label>
+                        <input type="text" id="Phone" pattern="[0-9]{10}" placeholder="Please enter your phone number">
                     <label>Email:</label>
                         <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
                     <label>Message:</label>
