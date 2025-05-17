@@ -6,7 +6,7 @@ This project reflects my journey from engineering to cybersecurity, showcasing m
 
 
 ## Technologies Used
-- HTML, CSS
+- HTML, CSS and JavaScript
 
 Feel free to explore and connect with me for collaboration opportunities!
 
